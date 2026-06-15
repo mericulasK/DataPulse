@@ -1,0 +1,8 @@
+{
+  "name": "DataPulse",
+  "description": "A visually stunning data visualization dashboard with a modern dark theme and custom-built charts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
