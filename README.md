@@ -80,15 +80,3 @@ To run the dashboard workspace locally:
    ```
 
 ---
-
-## 🚀 How to Export to Your GitHub Account
-
-To quickly link this fully compiled workspace directly to your GitHub repository (**mericulasK**):
-
-1. **Locate the Settings Menu**: Look at the top-right corner or the side controls inside the Google AI Studio interface.
-2. **Click Export**: Select the **Export/Deploy** dropdown.
-3. **Choose Export to GitHub**:
-   - Authenticate with your GitHub account when prompted.
-   - Set your target repository name (e.g., `DataPulse`).
-   - Click **Push / Export**.
-4. The system will automatically publish all files, including this `README.md` and complete project settings, directly to your GitHub profile at `https://github.com/mericulasK`.
