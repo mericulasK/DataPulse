@@ -8,11 +8,13 @@ import { BarChart } from './components/BarChart';
 import { AnalyticsView } from './components/AnalyticsView';
 import { AudienceView } from './components/AudienceView';
 import { ReportsView } from './components/ReportsView';
+import { SeoSearchView } from './components/SeoSearchView';
+import { AskDataPulse } from './components/AskDataPulse';
 
 export default function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>('dark');
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  const [activeSection, setActiveSection] = useState<'dashboard' | 'analytics' | 'audience' | 'reports'>('dashboard');
+  const [activeSection, setActiveSection] = useState<'dashboard' | 'analytics' | 'audience' | 'reports' | 'seo'>('dashboard');
   const [timeRange, setTimeRange] = useState<'3M' | '6M' | '1Y'>('1Y');
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 
@@ -47,6 +49,7 @@ export default function App() {
             { id: 'analytics', icon: Activity, label: 'Analytics' },
             { id: 'audience', icon: Users, label: 'Audience' },
             { id: 'reports', icon: PieChart, label: 'Reports' },
+            { id: 'seo', icon: Search, label: 'SEO Search' },
           ].map((item) => {
             const isActive = activeSection === item.id;
             return (
@@ -76,14 +79,7 @@ export default function App() {
         {/* Topbar */}
         <header className="h-20 glass-panel border-t-0 border-x-0 px-8 flex items-center justify-between sticky top-0 z-30">
           <div className="flex items-center gap-4 hidden sm:flex">
-             <div className="relative group">
-                <Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 opacity-50 group-hover:opacity-100 transition-opacity" />
-                <input 
-                  type="text" 
-                  placeholder="Ask DataPulse..." 
-                  className="pl-10 pr-4 py-2 rounded-full bg-white/5 border border-white/10 focus:border-brand-blue/50 focus:outline-none focus:ring-1 focus:ring-brand-blue/50 transition-all font-mono text-sm w-64 focus:w-80"
-                />
-             </div>
+             <AskDataPulse onNavigate={(section) => setActiveSection(section)} />
           </div>
 
           <div className="flex items-center gap-4 ml-auto">
@@ -197,6 +193,8 @@ export default function App() {
           {activeSection === 'audience' && <AudienceView />}
 
           {activeSection === 'reports' && <ReportsView />}
+
+          {activeSection === 'seo' && <SeoSearchView />}
 
         </div>
       </main>

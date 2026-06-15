@@ -122,3 +122,99 @@ export const SAVED_REPORTS: SavedReport[] = [
   { id: 'rep-03', title: 'Network Load & Performance Diagnostics', type: 'Performance', status: 'Ready', format: 'xlsx', size: '1.2 MB', date: '2026-06-08' },
 ];
 
+export interface SeoKeyword {
+  keyword: string;
+  searchVolume: number;
+  difficulty: number;
+  cpc: number;
+  clickRate: number;
+  monthlyTrend: number[];
+  searchIntent: 'Informational' | 'Transactional' | 'Commercial' | 'Navigational';
+  competitors: { url: string; rank: number; relevance: number }[];
+}
+
+export const SEO_KEYWORDS: SeoKeyword[] = [
+  {
+    keyword: 'analytics platform for cloud developers',
+    searchVolume: 18500,
+    difficulty: 74,
+    cpc: 8.45,
+    clickRate: 64,
+    monthlyTrend: [12000, 14500, 15000, 16200, 17800, 18500],
+    searchIntent: 'Commercial',
+    competitors: [
+      { url: 'https://datapulse.dev/cloud-analytics', rank: 1, relevance: 98 },
+      { url: 'https://clouddevs.io/best-analytics-suites', rank: 2, relevance: 88 },
+      { url: 'https://platformops.net/observability-frameworks', rank: 3, relevance: 75 },
+    ]
+  },
+  {
+    keyword: 'realtime dashboard with svg charting',
+    searchVolume: 4200,
+    difficulty: 48,
+    cpc: 4.20,
+    clickRate: 78,
+    monthlyTrend: [3100, 3400, 3600, 3900, 4000, 4200],
+    searchIntent: 'Transactional',
+    competitors: [
+      { url: 'https://datapulse.dev/dashboard/vectors', rank: 1, relevance: 100 },
+      { url: 'https://frontendmasters-guide.org/vector-charts', rank: 4, relevance: 70 },
+      { url: 'https://svg-weekly-digest.com/react-charting', rank: 5, relevance: 68 },
+    ]
+  },
+  {
+    keyword: 'how to build high performance widgets',
+    searchVolume: 9600,
+    difficulty: 28,
+    cpc: 1.15,
+    clickRate: 85,
+    monthlyTrend: [8000, 8400, 8800, 9100, 9400, 9600],
+    searchIntent: 'Informational',
+    competitors: [
+      { url: 'https://dev.to/performance-optimized-custom-components', rank: 2, relevance: 95 },
+      { url: 'https://datapulse.dev/blog/ultra-lightweight-ui-components', rank: 3, relevance: 92 },
+      { url: 'https://javascript-insights.com/dom-minimization', rank: 6, relevance: 54 },
+    ]
+  },
+  {
+    keyword: 'professional dark theme components tailwind',
+    searchVolume: 12400,
+    difficulty: 56,
+    cpc: 3.80,
+    clickRate: 72,
+    monthlyTrend: [10000, 11000, 11500, 12000, 12200, 12400],
+    searchIntent: 'Commercial',
+    competitors: [
+      { url: 'https://tailwindui.com/dark-theme-layouts', rank: 1, relevance: 90 },
+      { url: 'https://datapulse.dev/components/premium-dark-theme', rank: 2, relevance: 99 },
+      { url: 'https://shadcn.dev/dark-presets', rank: 3, relevance: 85 },
+    ]
+  },
+  {
+    keyword: 'react interactive vector maps visualizer',
+    searchVolume: 2800,
+    difficulty: 32,
+    cpc: 5.60,
+    clickRate: 61,
+    monthlyTrend: [1800, 2100, 2300, 2400, 2600, 2800],
+    searchIntent: 'Transactional',
+    competitors: [
+      { url: 'https://datapulse.dev/interactive-maps-module', rank: 1, relevance: 100 },
+      { url: 'https://reactmappinginsights.net/coordinates-svg', rank: 2, relevance: 82 },
+    ]
+  },
+  {
+    keyword: 'best conversion funnel tracking tools 2026',
+    searchVolume: 6500,
+    difficulty: 79,
+    cpc: 12.80,
+    clickRate: 55,
+    monthlyTrend: [4500, 5100, 5600, 6000, 6200, 6500],
+    searchIntent: 'Commercial',
+    competitors: [
+      { url: 'https://hotjar.com/funnel-analytics', rank: 1, relevance: 85 },
+      { url: 'https://datapulse.dev/conversion-audit', rank: 4, relevance: 94 },
+    ]
+  }
+];
+

@@ -34,6 +34,20 @@ Following the premium **Professional Polish** design guidelines, DataPulse is st
 - **Export Pipeline Builder**: Dynamic generation module allowing developers and administrators to specify target categories and download configurations. Shows compiled progress via real-time loading feedback on submission.
 - **Export File Database**: Live register structure listing pre-compiled documentation, sizes, and file types (e.g. PDF, CSV, Excel xlsx) complete with custom automated browser-level download alerts.
 
+### 🔍 5. SEO Search & Keyword Intel
+- **Interactive Keyword Index**: Explore pre-configured organic search volumes, difficulty factors, and user intent classifications (Informational, Transactional, Commercial, Navigational). Filter selections quickly to refine core intent goals.
+- **On-the-Fly Query Modeler**: Insert any custom keyword term on-the-fly and click **Analyze** to generate real-time projected search metrics including monthly volume counters, Average CPC estimates, and organic Click-Through-Rates.
+- **Monthly Demand Projections Chart**: Smooth SVG vector wave line with shaded area overlays detailing simulated organic volume projections over six progressive months. Tooltips display detailed counts on marker hovering.
+- **SERP Competitor Audit Table**: Live layout list mapping high-ranking domain URLs matching the active query complete with rank indices and calculated page relevance indicators.
+- **Compliance Diagnostics Simulator**: Embedded quick diagnostics auditing Canonical indexing schemas, crawler compliance meta titles, and XML sitemap active signals.
+
+### 💬 6. Ask DataPulse — Native Intelligence AI Assistant
+- **Omni-Present Search Activation**: Focus or click the `Ask DataPulse AI...` input located directly in the application topbar header to reveal an interactive floating dialog console.
+- **Preassembled Diagnostic Channels**: Instant quick-click buttons to invoke analytical answers for business revenue trends, server latency benchmarks, global audience metrics, ready reports, or SEO statistics.
+- **Dynamic NL Query Scanner**: Parses custom natural language prompts and yields contextually matching responses with rich styling.
+- **Contextual Action Switchers**: Built-in navigational deep-links within the AI replies (e.g. `Go to Operations Dashboard`, `Access SEO Keyword Intel`) that dynamically reroute the user to the correct workspace view on click.
+- **Click-Outside Dismissal**: Responsive click-outside listeners and close actions keep the workspace clean when focus is returned to dashboard widgets.
+
 ---
 
 ## 💻 Technical Implementation Details
@@ -67,3 +81,14 @@ To run the dashboard workspace locally:
 
 ---
 
+## 🚀 How to Export to Your GitHub Account
+
+To quickly link this fully compiled workspace directly to your GitHub repository (**mericulasK**):
+
+1. **Locate the Settings Menu**: Look at the top-right corner or the side controls inside the Google AI Studio interface.
+2. **Click Export**: Select the **Export/Deploy** dropdown.
+3. **Choose Export to GitHub**:
+   - Authenticate with your GitHub account when prompted.
+   - Set your target repository name (e.g., `DataPulse`).
+   - Click **Push / Export**.
+4. The system will automatically publish all files, including this `README.md` and complete project settings, directly to your GitHub profile at `https://github.com/mericulasK`.
